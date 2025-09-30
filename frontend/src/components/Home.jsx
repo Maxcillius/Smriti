@@ -57,25 +57,27 @@ function Home() {
             How Smriti Helps
           </h2>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-            <div onClick={()=>{navigate('./reminder')}}>
+            <div onClick={()=>{navigate('./reminder')}} className='hover:cursor-pointer'>
             <FeatureCard
               icon={Calendar}
               title="Daily Reminders"
               description="Gentle reminders for medications, appointments, and daily activities to maintain routine and independence."
             />
             </div>
-            <div onClick={()=>{navigate('./gallery')}}>
+            <div onClick={()=>{navigate('./gallery')}} className='hover:cursor-pointer'>
             <FeatureCard
               icon={Users}
               title="Family Connection"
               description="Stay connected with loved ones through simplified communication tools and shared memories."
             />
             </div>
-            <FeatureCard
-              icon={Bell}
-              title="Smart Alerts"
-              description="Intelligent monitoring system that alerts caregivers when assistance might be needed."
-            />
+            <div onClick={() => {navigate('./tasks')}} className='hover:cursor-pointer'>
+              <FeatureCard
+                icon={Bell}
+                title="Cognitive Fitness Lab"
+                description="Description"
+              />
+            </div>
             <FeatureCard
               icon={Heart}
               title="Emotional Support"

@@ -4,7 +4,7 @@ import TasksPage from './TasksPage';
 
 function Rem() {
   return (
-    <div className="min-h-screen bg-gradient-to-r from-[#E066FF] to-[#8A7CFF]">
+    <div className="min-h-screen bg-gradient-to-r from-[#E066FF] to-[#8A7CFF] pt-24">
       <header className="bg-white/10 backdrop-blur-lg border-b border-white/10">
         <div className="max-w-7xl mx-auto px-4 py-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-center md:justify-start">

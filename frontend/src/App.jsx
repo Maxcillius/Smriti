@@ -8,6 +8,7 @@ import Rem from './Reminder/Rem'
 import Auth from './pages/Auth'
 import ImageGallery from './components/ImageGallery';
 import Locations from './pages/Locations';
+import MiniTasks from './pages/Minitasks'
 import io from 'socket.io-client';
 import { useEffect } from 'react';
 
@@ -52,11 +53,12 @@ function App() {
     <BrowserRouter>
       <Navbar />
       <Routes>
-        <Route path = '/' element = {<Locations/>}/>
+        <Route path = '/' element = {<Home/>}/>
         <Route path = '/imageupload' element = {<ImageUpload />}/>
         <Route path = '/auth' element = {<Auth />}/>
         <Route path = '/reminder' element = {<Rem />}/>
         <Route path = '/gallery' element = {<ImageGallery />}/>
+        <Route path = '/tasks' element = {<MiniTasks />}/>
       </Routes>
       <Footer />
       </BrowserRouter>

@@ -1,5 +1,5 @@
 import React, { useState ,} from 'react';
-import { useNavigate ,} from 'react-router-dom';
+import { redirect, useNavigate ,} from 'react-router-dom';
 import { Brain, Menu, X } from 'lucide-react';
 
 function Navbar() {
@@ -9,10 +9,10 @@ function Navbar() {
     <nav className="fixed z-[100] top-2 rounded-[10px] px-2 mb-16 h-[4rem] w-[95%] bg-white/50 backdrop-blur-[100px] flex flex-col ml-[2.5%]">
       <div className='my-auto'>
       <div className="flex justify-between items-center">
-        <div className="flex items-center space-x-2">
+        <a href='/' className="flex items-center space-x-2 hover:cursor-pointer">
           <Brain className="h-8 w-8 text-white" />
           <span className="text-2xl font-bold text-white">Smriti</span>
-        </div>
+        </a>
         
         {/* Desktop Menu */}
         <div className="hidden md:flex space-x-6">
